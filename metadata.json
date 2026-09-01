@@ -1,0 +1,8 @@
+{
+  "name": "Rehman Bazar",
+  "description": "Premium multi-category e-commerce experience for USA & UK customers with luxury styling, real-time filters, interactive checkout, and merchant administration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

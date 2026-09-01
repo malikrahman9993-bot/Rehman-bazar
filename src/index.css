@@ -1,0 +1,357 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Outfit', 'Playfair Display', sans-serif;
+  }
+}
+
+/* Theme Transitions */
+html {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Light Theme Luxe Styling */
+html.light-theme {
+  color-scheme: light;
+}
+
+html.light-theme body,
+html.light-theme .bg-stone-950 {
+  background-color: #faf9f6 !important;
+  color: #1c1917 !important;
+}
+
+/* Card & Surface Containers */
+html.light-theme .bg-stone-900,
+html.light-theme .bg-stone-900\/95,
+html.light-theme .bg-stone-900\/90,
+html.light-theme .bg-stone-900\/85,
+html.light-theme .bg-stone-900\/80,
+html.light-theme .bg-stone-900\/70,
+html.light-theme .bg-stone-900\/60,
+html.light-theme .bg-stone-900\/50,
+html.light-theme .bg-stone-900\/40 {
+  background-color: #ffffff !important;
+  color: #1c1917 !important;
+  box-shadow: 0 2px 12px -2px rgba(0, 0, 0, 0.04), 0 1px 3px 0 rgba(0, 0, 0, 0.02);
+}
+
+html.light-theme .bg-stone-800,
+html.light-theme .bg-stone-800\/90,
+html.light-theme .bg-stone-800\/80,
+html.light-theme .bg-stone-800\/60,
+html.light-theme .bg-stone-800\/50,
+html.light-theme .bg-stone-800\/40,
+html.light-theme .bg-stone-800\/30,
+html.light-theme .bg-stone-800\/20,
+html.light-theme .bg-stone-700 {
+  background-color: #f5f4f0 !important;
+  color: #1c1917 !important;
+}
+
+/* Modal and Drawer Glass Backdrops */
+html.light-theme .fixed.inset-0.bg-stone-950\/80,
+html.light-theme .fixed.inset-0.bg-stone-950\/85,
+html.light-theme .fixed.inset-0.bg-black\/80,
+html.light-theme .fixed.inset-0.bg-black\/60 {
+  background-color: rgba(28, 25, 23, 0.45) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+/* Product Card Image Stages & Inset Canvas */
+html.light-theme .aspect-\[4\/3\].bg-stone-950,
+html.light-theme .aspect-\[4\/3\].bg-stone-900,
+html.light-theme .aspect-square.bg-stone-950,
+html.light-theme .aspect-square.bg-stone-900,
+html.light-theme .bg-stone-950\/80,
+html.light-theme .bg-stone-950\/90,
+html.light-theme .bg-stone-950\/70 {
+  background-color: #f4f3ef !important;
+}
+
+/* Borders & Dividers */
+html.light-theme .border-stone-800,
+html.light-theme .border-stone-800\/90,
+html.light-theme .border-stone-800\/80,
+html.light-theme .border-stone-800\/60,
+html.light-theme .border-stone-800\/40,
+html.light-theme .border-stone-800\/30,
+html.light-theme .border-stone-800\/20,
+html.light-theme .border-stone-700,
+html.light-theme .border-stone-700\/80,
+html.light-theme .border-stone-700\/60,
+html.light-theme .border-stone-900 {
+  border-color: #e6e4df !important;
+}
+
+html.light-theme .divide-stone-800 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #e6e4df !important;
+}
+
+/* Typography Hierarchy & Contrast */
+html.light-theme .text-white,
+html.light-theme .text-stone-100 {
+  color: #0c0a09 !important;
+}
+
+html.light-theme .text-stone-200,
+html.light-theme .text-stone-300 {
+  color: #292524 !important;
+}
+
+html.light-theme .text-stone-400 {
+  color: #57534e !important;
+}
+
+html.light-theme .text-stone-500 {
+  color: #78716c !important;
+}
+
+/* Rich High-Contrast Brand Accents */
+html.light-theme .text-amber-400,
+html.light-theme .text-amber-300,
+html.light-theme .text-amber-200 {
+  color: #b45309 !important;
+}
+
+html.light-theme .text-emerald-400,
+html.light-theme .text-emerald-300 {
+  color: #047857 !important;
+}
+
+html.light-theme .text-rose-400,
+html.light-theme .text-rose-300 {
+  color: #be123c !important;
+}
+
+html.light-theme .text-sky-400,
+html.light-theme .text-sky-300 {
+  color: #0369a1 !important;
+}
+
+/* Luxury Shimmer Text in Light Mode */
+html.light-theme .text-gradient-shimmer {
+  background: linear-gradient(90deg, #92400e 0%, #d97706 35%, #b45309 60%, #92400e 100%) !important;
+  background-size: 200% auto !important;
+  color: transparent !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+
+/* Badge and Tag Overrides */
+html.light-theme .bg-amber-500\/10,
+html.light-theme .bg-amber-500\/20 {
+  background-color: #fef3c7 !important;
+  color: #92400e !important;
+  border-color: #fde68a !important;
+}
+
+html.light-theme .bg-rose-500\/10,
+html.light-theme .bg-rose-500\/20 {
+  background-color: #ffe4e6 !important;
+  color: #9f1239 !important;
+  border-color: #fecdd3 !important;
+}
+
+html.light-theme .bg-emerald-500\/10,
+html.light-theme .bg-emerald-500\/20 {
+  background-color: #dcfce7 !important;
+  color: #166534 !important;
+  border-color: #bbf7d0 !important;
+}
+
+html.light-theme .bg-sky-500\/10,
+html.light-theme .bg-sky-500\/20 {
+  background-color: #e0f2fe !important;
+  color: #075985 !important;
+  border-color: #bae6fd !important;
+}
+
+/* Inputs, Textareas & Select Dropdowns */
+html.light-theme input,
+html.light-theme textarea,
+html.light-theme select {
+  background-color: #ffffff !important;
+  border-color: #d6d3d1 !important;
+  color: #1c1917 !important;
+}
+
+html.light-theme input::placeholder,
+html.light-theme textarea::placeholder {
+  color: #8c857b !important;
+}
+
+html.light-theme input:focus,
+html.light-theme textarea:focus,
+html.light-theme select:focus {
+  border-color: #d97706 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15) !important;
+}
+
+/* Interactive Hover States */
+html.light-theme .hover\:bg-stone-800:hover,
+html.light-theme .hover\:bg-stone-900:hover,
+html.light-theme .hover\:bg-stone-700:hover {
+  background-color: #eeebe5 !important;
+  color: #0c0a09 !important;
+}
+
+html.light-theme .hover\:text-white:hover {
+  color: #0c0a09 !important;
+}
+
+html.light-theme .hover\:text-amber-300:hover,
+html.light-theme .hover\:text-amber-400:hover {
+  color: #b45309 !important;
+}
+
+html.light-theme .hover\:border-amber-500\/50:hover,
+html.light-theme .hover\:border-amber-500:hover,
+html.light-theme .hover\:border-amber-400:hover {
+  border-color: #d97706 !important;
+}
+
+/* Header & Navigation */
+html.light-theme header.sticky {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  border-bottom: 1px solid #e6e4df !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Footer in Day Theme */
+html.light-theme footer {
+  background-color: #f4f3ef !important;
+  border-top: 1px solid #e6e4df !important;
+  color: #44403c !important;
+}
+
+/* Mobile Bottom Bar in Day Theme */
+html.light-theme .fixed.bottom-0.bg-stone-950\/95 {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  border-top: 1px solid #e6e4df !important;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Admin / Hero Gradient Panels in Day Theme */
+html.light-theme .bg-gradient-to-r.from-stone-900.via-stone-900.to-amber-950\/40,
+html.light-theme .bg-gradient-to-r.from-stone-900.to-amber-950\/40 {
+  background: linear-gradient(135deg, #ffffff 0%, #fffbeb 100%) !important;
+  border-color: #fde68a !important;
+}
+
+/* Table Head in Day Theme */
+html.light-theme thead.bg-stone-950\/90,
+html.light-theme thead {
+  background-color: #f5f4f0 !important;
+  color: #44403c !important;
+}
+
+html.light-theme tbody tr:hover {
+  background-color: #faf9f6 !important;
+}
+
+/* Scrollbar */
+html.light-theme ::-webkit-scrollbar-track {
+  background: #f5f4f0;
+}
+
+html.light-theme ::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 9999px;
+}
+
+html.light-theme ::-webkit-scrollbar-thumb:hover {
+  background: #b45309;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Luxury Interactive Button & Micro-motion styles */
+@keyframes textShimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.text-gradient-shimmer {
+  background: linear-gradient(90deg, #fef08a 0%, #f59e0b 25%, #fbbf24 50%, #f59e0b 75%, #fef08a 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: textShimmer 4s ease infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(245, 158, 11, 0.3), inset 0 0 15px rgba(245, 158, 11, 0.1); }
+  50% { box-shadow: 0 0 25px rgba(245, 158, 11, 0.6), inset 0 0 20px rgba(245, 158, 11, 0.25); }
+}
+
+.btn-glow-pulse {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(0.5deg); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+/* Global Luxury Button Hover / Active Micro-Interactions */
+button, a, input, select {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+button:active, a:active {
+  transform: scale(0.97);
+}
+
+/* Shimmer animation for luxury skeleton & badges */
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
+
+.shimmer-effect {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer-effect::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(245, 158, 11, 0.1) 20%,
+    rgba(255, 255, 255, 0.2) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  animation: shimmer 2.5s infinite;
+  content: '';
+}
